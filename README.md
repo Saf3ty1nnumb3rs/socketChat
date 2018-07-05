@@ -2,6 +2,18 @@
 
 # Node Chat - A Socket.io Project
 
+## This app was developed as a simple introduction to utilizing socket.io web sockets and as an exercise in strengthening javascript fundamentals.
+
+# How to use?
+
+## If you're flying solo, navigate to the deployed heroku app, duplicate the tab, sign in with different user names (identical names aren't allowed), enter the same chat room (or select from dropdown if available - occupied rooms appear in the dropdown dynamically), and talk to yourself (it's ok, we all do it sometimes). Notice tab updates as messages are sent!
+
+## If you have friends, go to the site and you can both log in on your computers and go to the same chat room. Chat away. You may also share your location if you so desire.
+
+## Try to break it and let me know if you do. Also, as it is very simple currently,more features are in the works: saving chats, creating an actual profile that persists, web tokens, etc.
+
+## Have an idea? Please share! Contact me through linkedin or at josh@joshuawsample.com
+
 
 * <a name="JoshLink" href="https://www.linkedin.com/in/joshsample/">
 Linked In</a>
