@@ -2,7 +2,7 @@
 
 # Node Chat - A Socket.io Project
 
-## This app was developed as a simple introduction to utilizing socket.io web sockets and as an exercise in strengthening javascript fundamentals.
+## This app was developed as a simple introduction to utilizing socket.io web sockets and as an exercise in strengthening javascript fundamentals and testing.
 
 # How to use?
 
