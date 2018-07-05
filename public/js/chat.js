@@ -11,6 +11,7 @@ var favicon=new Favico({
 
 ///////////////////////// Client Connect
 socket.on('connect', () => {
+    new EmojiPicker().discover()
     console.log('Connected to server.')
     const params = getQuery(window.location.search)
     socket.emit('join', params, (err) => {

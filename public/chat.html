@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="stylesheet" type="text/css" media="screen" href="/css/styles.css" />
     <link id="favicon" rel="shortcut icon" type="image/png" href="/images/chat.png">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/emoji.css" rel="stylesheet">
 </head>
 
 <body class="chat">
@@ -15,7 +17,7 @@
     <div class="chat__sidebar">
         <h3>People</h3>
         <div id="users">
-            
+
 
         </div>
     </div>
@@ -24,7 +26,7 @@
 
         <div class="chat__footer">
             <form id="message-form">
-                <input type="text" name="message" placeholder="Message" autofocus autocomplete="off" />
+                <input type="text" name="message" placeholder="Message" autofocus autocomplete="off" data-emojiable="true" />
                 <button>Send</button>
             </form>
             <button id="send-location">Send Location</button>
@@ -53,7 +55,7 @@
         </div>
         <div class="message__body">
             <p>
-              <a href="{{url}}" target="_blank">My Current Location</a>
+                <a href="{{url}}" target="_blank">My Current Location</a>
             </p>
         </div>
     </li>
@@ -63,7 +65,11 @@
 <script src="/js/libs/moment.js"></script>
 <script src="/js/libs/mustache.js"></script>
 <script src="/js/libs/favico.js"></script>
-<script type="text/javascript"src="/js/libs/helper.js"></script>
+<script src="/js/libs/config.js"></script>
+<script src="/js/libs/util.js"></script>
+<script src="/js/libs/jquery.emojiarea.js"></script>
+<script src="/js/libs/emoji-picker.js"></script>
+<script type="text/javascript" src="/js/libs/helper.js"></script>
 
 <script src="/js/chat.js"></script>
 

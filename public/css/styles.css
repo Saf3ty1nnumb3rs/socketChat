@@ -166,6 +166,7 @@ button:disabled {
     border: none;
     padding: 10px;
     flex-grow: 1;
+    width: 100%;
 }
 
 .chat__messages {
