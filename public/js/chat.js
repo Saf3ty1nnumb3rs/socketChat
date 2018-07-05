@@ -80,8 +80,9 @@ socket.on('newLocationMessage', (message) => {
         e.preventDefault()
         socket.emit('createMessage', {
             text: document.getElementsByName('message')[0].value
-        }, function(){
-            messageTextbox.reset()
+        }, () => {
+            // messageTextbox.reset()
+            document.getElementsByClassName('emoji-wysiwyg-editor')[0].innerHTML = '';
 
         })
     })

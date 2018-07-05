@@ -505,9 +505,9 @@
         var tagName = node.tagName.toLowerCase();
         var isBlock = TAGS_BLOCK.indexOf(tagName) !== -1;
 
-        if (isBlock && line.length)
+        if (isBlock && line.length) {
           flush();
-
+        }
         if (tagName === 'img') {
           var alt = node.getAttribute('alt') || '';
           if (alt) {
@@ -523,8 +523,9 @@
            sanitizeNode(children[i]);
         }
 
-        if (isBlock && line.length)
+        if (isBlock && line.length){
           flush();
+        }
       }
     };
 
@@ -533,8 +534,9 @@
       sanitizeNode(children[i]);
     }
 
-    if (line.length)
+    if (line.length) {
       flush();
+    }
 
     var returnValue = lines.join('\n');
     return emojiPopup.colonToUnicode(returnValue);
@@ -550,10 +552,11 @@
     //safari's scrollHeight includes padding
     //if ($.browser.safari)
 //      scrollHeight -= parseInt(this.css('padding-top')) + parseInt(this.css('padding-bottom'));
-    if (this.outerHeight() < scrollHeight)
+    if (this.outerHeight() < scrollHeight) {
       return true;
-    else
+    }else{
       return false;
+    }
   }
 
   /**
